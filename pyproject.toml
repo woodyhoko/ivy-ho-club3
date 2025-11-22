@@ -1,0 +1,44 @@
+[build-system]
+# These are the build tools setuptools needs to build your package
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# --- Core Metadata ---
+name = "ivy-ho-club3"  # The name on PyPI
+version = "3.0.1"
+description = "A short description of my awesome library."
+readme = "README.md"  # The file for the long description on PyPI
+license = { file = "LICENSE" }
+requires-python = ">=3.8"  # The Python versions you support
+
+# --- People ---
+authors = [
+  { name = "Ho", email = "woodyhoko@gmail.com" },
+]
+
+# --- Classifiers ---
+# These help users find your package. Full list: https://pypi.org/classifiers/
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+]
+
+# --- Dependencies ---
+dependencies = [
+  # All imported modules are from the Python standard library:
+  # socket, struct, pickle, threading, time, uuid, asyncio, random, collections.UserDict
+  # No external dependencies required.
+]
+
+# --- Links ---
+[project.urls]
+Homepage = "https://github.com/woodyhoko/ivy-ho-club3"
+"Bug Tracker" = "https://github.com/woodyhoko/ivy-ho-club3/issues"
+
+# --- Optional: Find your package automatically ---
+[tool.setuptools.packages.find]
+where = ["src"]  # Look for packages in the 'src' directory
